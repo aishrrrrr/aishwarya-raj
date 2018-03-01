@@ -1,5 +1,4 @@
 1.shell script to find the given number is prime number or not.
-
  echo "enter a number"
  read num
  i=2
