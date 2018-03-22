@@ -1,0 +1,31 @@
+write a menu script to perform file operations like: cp,mv,comm atleast five operations using select statement .write function for each operation.
+
+copy()
+{
+echo "Enter file name"
+read r1
+echo "Enter destination"
+read r2
+ [-d,$r1]
+ then if [-d,$r2]
+ then
+ cp $r1,$r2
+ fi
+ else
+ echo "file doesnt exist"
+ fi
+}
+
+
+rename()
+{
+echo "Enter filename to remane"
+read fi
+echo "Enter new name"
+read f2
+if[-f,f1]
+then mu$f1 $f2
+else
+echo "Invalid filename"
+fi
+}
