@@ -1,31 +1,27 @@
-write a menu script to perform file operations like: cp,mv,comm atleast five operations using select statement .write function for each operation.
 
-copy()
-{
-echo "Enter file name"
-read r1
-echo "Enter destination"
-read r2
- [-d,$r1]
- then if [-d,$r2]
- then
- cp $r1,$r2
- fi
- else
- echo "file doesnt exist"
- fi
-}
+*Use of select command to display a menu of names
 
-
-rename()
-{
-echo "Enter filename to remane"
-read fi
-echo "Enter new name"
-read f2
-if[-f,f1]
-then mu$f1 $f2
-else
-echo "Invalid filename"
+PS3='select names : '
+names='aishwarya manasa akshaya quit'
+select name in $names
+do
+if [ $name == 'quit' ]
+then
+break
 fi
-}
+echo hello $name
+done
+
+OUTPUT
+
+1) aishwarya
+2) manasa
+3) akshaya
+4) quit
+select names : 1
+hello aishwarya
+select names : 2
+hello manasa
+select names : 3
+hello akshaya
+select names : 4
